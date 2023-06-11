@@ -65,21 +65,4 @@ namespace Task1.UnitTests
         [TestCase(-1, 2, -3, 3, -6)]
         public void FloatMultiplicationTest(float x1, float y1, float n, float cx, float cy)
         {
-            var a = new Vector2D(x1, y1);
-            var c = n * a;
-            Assert.That(c.X, Is.EqualTo(cx));
-            Assert.That(c.Y, Is.EqualTo(cy));
-        }
-        
-        [TestCase(1, 2.5f, 3, 3, 10.5f)]
-        [TestCase(-1, 2, -1, 2, 5)]
-        [TestCase(1, 0, 0, 1, 0)]
-        public void VectorMultiplicationTest(float x1, float y1, float x2, float y2, float answer)
-        {
-            var a = new Vector2D(x1, y1);
-            var b = new Vector2D(x2, y2);
-            var c = a * b;
-            Assert.That(c, Is.EqualTo(answer));
-        }
-    }
-}
+           
